@@ -1,5 +1,5 @@
 {
-  "name": "concat-loader",
+  "name": "multiple-loader",
   "version": "0.1.0",
   "description": "A loader that concatenates multi modules into a single module.",
   "main": "index.js",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minodisk/concat-loader.git"
+    "url": "https://github.com/minodisk/multiple-loader.git"
   },
   "keywords": [
     "webpack",
     "loader",
-    "concat"
+    "multiple"
   ],
   "author": "Daisuke Mino",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/minodisk/concat-loader/issues"
+    "url": "https://github.com/minodisk/multiple-loader/issues"
   },
-  "homepage": "https://github.com/minodisk/concat-loader",
+  "homepage": "https://github.com/minodisk/multiple-loader",
   "devDependencies": {
     "chai": "^3.5.0",
     "css-inline-loader": "^0.1.0",

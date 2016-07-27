@@ -1,6 +1,6 @@
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
-const concat = require('..')
+const multiple = require('..')
 
 module.exports = {
   entry: path.join(__dirname, 'src/test'),
@@ -14,7 +14,7 @@ module.exports = {
     loaders: [
       {
         test: /\.css$/,
-        loader: concat(
+        loader: multiple(
           [
             'css-inline'
           ],

@@ -1,31 +1,32 @@
-# concat-loader
+# multiple-loader [![CircleCI](https://circleci.com/gh/minodisk/multiple-loader.svg?style=svg)](https://circleci.com/gh/minodisk/multiple-loader)
 
-A loader for webpack that concatenates multi modules into a single module.
+A loader for webpack that concatenates multiple modules into a single module.
 
 ## Installation
 
 ```
-npm install -D concat-loader
+npm install -D multiple-loader
 ```
 
 ## Usage
 
 webpack.config.js:
 
-``` javascript
-var concat = require("concat-loader");
-{
+```js
+var multiple = require("multiple-loader");
+
+module.exports = {
   module: {
     loaders: [
       {
         test: /\.css$/,
-        loader: concat(
+        loader: multiple(
           [
-            'css-inline',
+            'css-inline'
           ],
           [
             'style',
-            'css?modules',
+            'css?modules'
           ]
         )
       }
@@ -36,7 +37,7 @@ var concat = require("concat-loader");
 
 example.css:
 
-```
+```css
 .foo {
   background-color: #FF0000;
 }
@@ -44,7 +45,7 @@ example.css:
 
 exmaple.js:
 
-```
+```jsx
 const [ styles, classes ] = require('./example.css')
 
 console.log(styles)   // -> {
@@ -54,7 +55,7 @@ console.log(styles)   // -> {
                       // }
 
 console.log(classes)  // -> {
-                      //   foo: 'XXXXXXXXXXXXXXXXXXXXXX'
+                      //   foo: '_2lYda0XDAEUVhH-nj3Cjlo'
                       // }
 
 class MyComponent extends React.Component {

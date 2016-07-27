@@ -5,7 +5,7 @@ const window = global.window = document.defaultView
 const should = require('should')
 const loaded = require('./test.css')
 
-describe('concat-loader', () => {
+describe('multiple-loader', () => {
   it('should load module with multi loaders', () => {
     loaded.should.deepEqual([
       {
