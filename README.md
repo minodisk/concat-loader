@@ -13,7 +13,7 @@ npm install -D multiple-loader
 webpack.config.js:
 
 ```js
-var multiple = require("multiple-loader");
+var multiple = require("multiple-loader")
 
 module.exports = {
   module: {
