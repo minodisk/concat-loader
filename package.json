@@ -1,0 +1,36 @@
+{
+  "name": "concat-loader",
+  "version": "0.1.0",
+  "description": "A loader that concatenates multi modules into a single module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/webpack --config test/webpack.config.js && ./node_modules/.bin/mocha test/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minodisk/concat-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "concat"
+  ],
+  "author": "Daisuke Mino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minodisk/concat-loader/issues"
+  },
+  "homepage": "https://github.com/minodisk/concat-loader",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "css-inline-loader": "^0.1.0",
+    "css-loader": "^0.23.1",
+    "jsdom": "^9.4.1",
+    "mocha": "^2.5.3",
+    "power-assert": "^1.4.1",
+    "should": "^10.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-node-externals": "^1.3.2"
+  }
+}
